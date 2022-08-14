@@ -1,9 +1,54 @@
+body {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 550px;
+}
+
 .navbar {
-  /* width: 550px; */
+  width: 550px;
   height: 70px;
+
   background: #ffffff;
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
+}
+
+.nav-logo {
+  max-width: 100px;
   padding-left: 30px;
+}
+
+.group-photo {
+  padding-top: 26px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 110%;
+  color: #000000;
+  padding-block: 32px 16px;
+}
+
+.hero-p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 110%;
+  color: #222222;
+  width: 320px;
+}
+
+h1,
+.hero-p {
+  padding-left: 36px;
+  text-align: left;
+  display: flex;
+  font-family: "Poppins";
+  font-style: normal;
+  margin: 0;
 }
