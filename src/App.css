@@ -2,6 +2,7 @@ body {
   text-align: center;
   display: flex;
   justify-content: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -11,7 +12,6 @@ body {
 .navbar {
   width: 550px;
   height: 70px;
-
   background: #ffffff;
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -41,6 +41,7 @@ h1 {
   line-height: 110%;
   color: #222222;
   width: 320px;
+  padding-bottom: 49px;
 }
 
 h1,
@@ -51,4 +52,63 @@ h1,
   font-family: "Poppins";
   font-style: normal;
   margin: 0;
+}
+
+.card-section {
+  text-align: left;
+  padding-left: 37px;
+}
+
+.star1 {
+  width: 14px;
+  height: 14px;
+}
+
+.experience1 {
+  display: flex;
+  padding-top: 15px;
+}
+
+.rating-1 {
+  margin: 0;
+  margin-left: 2px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 110%;
+  color: #222222;
+}
+
+.location1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 110%;
+  color: #918e9b;
+}
+
+.card-text1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 110%;
+  margin: 0;
+  color: #222222;
+  padding-block: 8px;
+}
+
+.price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 110%;
+  margin: 0;
+  color: #222222;
+}
+.price2 {
+  font-weight: 300;
 }
