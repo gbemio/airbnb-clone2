@@ -1,26 +1,30 @@
 import React from "react";
-import Katie from "./images/katie.png";
+
 import Star from "./images/Star 1.png";
 
-const Card = () => {
+function Card(props) {
   return (
     <div className="card-section">
-      <img src={Katie} alt="" />
+      <img src={props.img} alt="" />
 
       <div className="experience1">
         <img src={Star} alt="" className="star1" />
         <p className="rating-1">
           {" "}
-          5.0 <span className="location1"> (6) . USA</span>
+          {props.rating}{" "}
+          <span className="location1">
+            {" "}
+            ({props.reviewCount}) . {props.country}
+          </span>
         </p>
       </div>
 
-      <p className="card-text1">Life lessons with Katie Zaferes</p>
+      <p className="card-text1">{props.title}</p>
       <p className="price">
-        From $136 <span className="price2"> / person</span>
+        From ${props.price} <span className="price2"> / person</span>
       </p>
     </div>
   );
-};
+}
 
 export default Card;
