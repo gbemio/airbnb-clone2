@@ -3,21 +3,26 @@ import React from "react";
 import Navbar from "./Navbar.jsx";
 import Hero from "./Hero.jsx";
 import Card from "./Card.jsx";
-import Katie from "./images/katie.png";
+import cardsData from "./cardsData.jsx";
 
 function App() {
+  const cardElements = cardsData.map((card) => {
+    return (
+      <Card
+        img={card.coverImg}
+        rating={card.stats.rating}
+        reviewCount={card.stats.reviewCount}
+        location={card.location}
+        title={card.title}
+        price={card.price}
+      />
+    );
+  });
   return (
     <div className="container">
       <Navbar />
       <Hero />
-      <Card
-        img={Katie}
-        rating="5.0"
-        reviewCount="6"
-        country="India"
-        title="Life lessons with Katie Zaferes"
-        price="136"
-      />
+      {cardElements}
     </div>
   );
 }

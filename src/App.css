@@ -112,3 +112,7 @@ h1,
 .price2 {
   font-weight: 300;
 }
+
+.card--image {
+  border-radius: 9px;
+}

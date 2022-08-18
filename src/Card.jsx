@@ -1,20 +1,18 @@
 import React from "react";
 
-import Star from "./images/Star 1.png";
-
 function Card(props) {
   return (
     <div className="card-section">
-      <img src={props.img} alt="" />
+      <img src={`../images/${props.img}`} className="card--image" alt="" />
 
       <div className="experience1">
-        <img src={Star} alt="" className="star1" />
+        <img src="Star 1.png" alt="" className="star1" />
         <p className="rating-1">
           {" "}
           {props.rating}{" "}
           <span className="location1">
             {" "}
-            ({props.reviewCount}) . {props.country}
+            ({props.reviewCount}) . {props.location}
           </span>
         </p>
       </div>

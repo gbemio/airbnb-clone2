@@ -1,12 +1,11 @@
-import React from 'react'
-import AirbnbLogo from './images/airbnb 1.png'
+import React from "react";
 
 const Navbar = () => {
   return (
-<div className='navbar' >
-    <img src={AirbnbLogo} alt="" className='nav-logo' />
-</div>
-  )
-}
+    <div className="navbar">
+      <img src="airbnb 1.png" alt="" className="nav-logo" />
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;
