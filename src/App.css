@@ -54,9 +54,27 @@ h1,
   margin: 0;
 }
 
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
 .card-section {
-  text-align: left;
-  padding-left: 37px;
+  /* text-align: left;
+  padding-left: 37px; */
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto; /* ADD */
+  display: flex; /* ADD */
+  flex-direction: column;
+}
+
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
 }
 
 .star1 {
@@ -111,8 +129,4 @@ h1,
 }
 .price2 {
   font-weight: 300;
-}
-
-.card--image {
-  border-radius: 9px;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import star1 from "./images2/Star 1.png";
 
 function Card(props) {
   return (
@@ -6,7 +7,7 @@ function Card(props) {
       <img src={`../images/${props.img}`} className="card--image" alt="" />
 
       <div className="experience1">
-        <img src="Star 1.png" alt="" className="star1" />
+        <img src={star1} alt="" className="star1" />
         <p className="rating-1">
           {" "}
           {props.rating}{" "}
