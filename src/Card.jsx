@@ -4,6 +4,7 @@ import star1 from "./images2/Star 1.png";
 function Card(props) {
   return (
     <div className="card-section">
+      <div className="card--badge">SOLD OUT</div>
       <img src={`../images/${props.img}`} className="card--image" alt="" />
 
       <div className="experience1">
