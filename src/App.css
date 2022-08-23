@@ -60,7 +60,6 @@ h1,
   gap: 20px;
   padding-left: 30px;
   overflow-x: auto;
-  position: relative;
 }
 
 .card-section {
@@ -70,6 +69,7 @@ h1,
   flex: 0 0 auto; /* ADD */
   display: flex; /* ADD */
   flex-direction: column;
+  position: relative;
 }
 
 .card--image {
@@ -82,7 +82,14 @@ h1,
 .card--badge {
   position: absolute;
   top: 6px;
-  left: 38px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+  /* position: absolute;
+  top: 6px;
+  left: 40px;
   width: 61px;
   height: 20px;
   background-color: white;
@@ -95,7 +102,7 @@ h1,
   color: #222222;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .star1 {
